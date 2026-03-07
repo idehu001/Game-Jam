@@ -4,13 +4,15 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rigidBody;
+    public Animator animator;
+    bool isFacingRight = true;
 
     [Header("Movement")]
     public float movementSpeed = 5f;
     float horizontalMovement;
 
     [Header("Jumping")]
-    public float jumpPower = 10f;
+    public float jumpPower = 12f;
 
     [Header("GroundCheck")]
     public Transform groundCheck;
@@ -19,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Gravity")]
     public float baseGravity = 2f;
-    public float maxFallSpeed = 18f;
+    public float maxFallSpeed = 10f;
     public float fallSpeedMultiplier = 2f;
 
     // Update is called once per frame
@@ -28,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
         Vector2 newVelocity = new Vector2(horizontalMovement * movementSpeed, rigidBody.linearVelocity.y);
         rigidBody.linearVelocity = newVelocity;
         Gravity();
+        Flip();
+
+        animator.SetFloat("yVelocity", rigidBody.linearVelocity.y);
+        animator.SetFloat("xVelocity", Mathf.Abs(rigidBody.linearVelocity.x));
     }
 
     private void Gravity()
@@ -56,10 +62,12 @@ public class PlayerMovement : MonoBehaviour
             if (context.performed)
             {
                 rigidBody.linearVelocity = new Vector2(rigidBody.linearVelocity.x, jumpPower);
+                animator.SetTrigger("Jump");
             }
-            else if (context.canceled)
+            else if (context.canceled && rigidBody.linearVelocity.y > 0)
             {
                 rigidBody.linearVelocity = new Vector2(rigidBody.linearVelocity.x, jumpPower * 0.5f);
+                animator.SetTrigger("Jump");
             }
         }
     }
@@ -71,6 +79,17 @@ public class PlayerMovement : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    private void Flip()
+    {
+        if (isFacingRight && horizontalMovement < 0 || !isFacingRight && horizontalMovement > 0)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 ls = transform.localScale;
+            ls.x *= -1f;
+            transform.localScale = ls;
+        }
     }
 
     private void OnDrawGizmosSelected()
