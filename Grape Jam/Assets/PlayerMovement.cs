@@ -24,11 +24,31 @@ public class PlayerMovement : MonoBehaviour
     public float maxFallSpeed = 10f;
     public float fallSpeedMultiplier = 2f;
 
+    [Header("Water")]
+    public bool inWater = false;
+    float verticalMovement;
+
+    [Header("Ice")]
+    public bool onIce = false;
+    public float iceRatio;
+    private Vector2 oldMovement;
+
     // Update is called once per frame
     void Update()
     {
-        Vector2 newVelocity = new Vector2(horizontalMovement * movementSpeed, rigidBody.linearVelocity.y);
-        rigidBody.linearVelocity = newVelocity;
+        if (onIce)
+        {
+            Vector2 movement = Vector2.MoveTowards(oldMovement, new Vector2(horizontalMovement * movementSpeed, 0)
+            + (inWater ? new Vector2(0, verticalMovement * movementSpeed) : new Vector2(0, rigidBody.linearVelocity.y)), iceRatio);
+            rigidBody.linearVelocity = movement;
+            oldMovement = movement;
+        } else
+        {
+            Vector2 movement = new Vector2(horizontalMovement * movementSpeed, 0)
+            + (inWater ? new Vector2(0, verticalMovement * movementSpeed) : new Vector2(0, rigidBody.linearVelocity.y));
+            rigidBody.linearVelocity = movement;
+            oldMovement = movement;
+        }
         Gravity();
         Flip();
 
@@ -69,6 +89,18 @@ public class PlayerMovement : MonoBehaviour
                 rigidBody.linearVelocity = new Vector2(rigidBody.linearVelocity.x, jumpPower * 0.5f);
                 animator.SetTrigger("Jump");
             }
+        }
+    }
+
+    public void Float(InputAction.CallbackContext context)
+    {
+        if (inWater)
+        {
+            verticalMovement = context.ReadValue<Vector2>().y;
+        }
+        else
+        {
+            verticalMovement = 0;
         }
     }
 
