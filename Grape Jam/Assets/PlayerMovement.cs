@@ -28,12 +28,27 @@ public class PlayerMovement : MonoBehaviour
     public bool inWater = false;
     float verticalMovement;
 
+    [Header("Ice")]
+    public bool onIce = false;
+    public float iceRatio;
+    private Vector2 oldMovement;
+
     // Update is called once per frame
     void Update()
     {
-        Vector2 movement = new Vector2(horizontalMovement * movementSpeed, 0) 
+        if (onIce)
+        {
+            Vector2 movement = Vector2.MoveTowards(oldMovement, new Vector2(horizontalMovement * movementSpeed, 0)
+            + (inWater ? new Vector2(0, verticalMovement * movementSpeed) : new Vector2(0, rigidBody.linearVelocity.y)), iceRatio);
+            rigidBody.linearVelocity = movement;
+            oldMovement = movement;
+        } else
+        {
+            Vector2 movement = new Vector2(horizontalMovement * movementSpeed, 0)
             + (inWater ? new Vector2(0, verticalMovement * movementSpeed) : new Vector2(0, rigidBody.linearVelocity.y));
-        rigidBody.linearVelocity = movement;
+            rigidBody.linearVelocity = movement;
+            oldMovement = movement;
+        }
         Gravity();
         Flip();
 
