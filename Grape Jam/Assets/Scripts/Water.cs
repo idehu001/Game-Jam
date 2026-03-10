@@ -6,8 +6,10 @@ public class Water : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Enterd");
         if (collision.CompareTag("Player"))
         {
+            Debug.Log("Player");
             player.inWater = true;
             player.fallSpeedMultiplier = 0f;
             player.baseGravity = 0f;
