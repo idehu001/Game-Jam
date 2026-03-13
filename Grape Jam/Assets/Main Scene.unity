@@ -4166,13 +4166,13 @@ Transform:
   - {fileID: 1781871764}
   - {fileID: 98736552}
   - {fileID: 595208350}
-  - {fileID: 2047988347}
   - {fileID: 855719875}
   - {fileID: 1781175762}
   - {fileID: 1348838795}
   - {fileID: 164277336}
   - {fileID: 266849221}
   - {fileID: 716325319}
+  - {fileID: 2047988347}
   - {fileID: 213498664}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7734,8 +7734,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -232535695
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
