@@ -3735,7 +3735,6 @@ GameObject:
   - component: {fileID: 164277340}
   - component: {fileID: 164277339}
   - component: {fileID: 164277338}
-  - component: {fileID: 164277337}
   m_Layer: 0
   m_Name: Cracks
   m_TagString: Untagged
@@ -3758,19 +3757,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 182082156}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &164277337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164277335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 685e7c3c4a1f91842a68b75c202b37ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  player: {fileID: 594410081}
 --- !u!19719996 &164277338
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -5544,7 +5530,6 @@ GameObject:
   - component: {fileID: 594410078}
   - component: {fileID: 594410077}
   - component: {fileID: 594410076}
-  - component: {fileID: 594410081}
   - component: {fileID: 594410082}
   m_Layer: 0
   m_Name: Nu
@@ -5580,7 +5565,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 594410081}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0
@@ -5636,7 +5621,7 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 594410081}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: Jump
         m_Mode: 0
@@ -5652,7 +5637,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Jump[/Keyboard/upArrow,/Keyboard/w]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 594410081}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: Float
         m_Mode: 0
@@ -5819,33 +5804,6 @@ Transform:
   - {fileID: 140532836}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &594410081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594410075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 864e9b11af7cb5048abed6430646fa62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  rigidBody: {fileID: 594410078}
-  animator: {fileID: 594410082}
-  movementSpeed: 5
-  jumpPower: 12
-  groundCheck: {fileID: 140532836}
-  groundCheckSize: {x: 1, y: 0.1}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  baseGravity: 2
-  maxFallSpeed: 10
-  fallSpeedMultiplier: 2
-  inWater: 0
-  onIce: 0
-  iceRatio: 0
 --- !u!95 &594410082
 Animator:
   serializedVersion: 7
@@ -5882,7 +5840,6 @@ GameObject:
   - component: {fileID: 595208355}
   - component: {fileID: 595208352}
   - component: {fileID: 595208351}
-  - component: {fileID: 595208356}
   m_Layer: 3
   m_Name: Coals
   m_TagString: Untagged
@@ -6317,19 +6274,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!114 &595208356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595208349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af3f54447b0e1f3408f1ed490e30d640, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coals
-  playerMovement: {fileID: 594410081}
 --- !u!1 &716325318
 GameObject:
   m_ObjectHideFlags: 0
@@ -6642,7 +6586,6 @@ GameObject:
   - component: {fileID: 855719879}
   - component: {fileID: 855719878}
   - component: {fileID: 855719877}
-  - component: {fileID: 855719876}
   m_Layer: 0
   m_Name: ToBaseGravity
   m_TagString: Untagged
@@ -6665,19 +6608,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 182082156}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &855719876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855719874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88beab74587b7574abcb9ef99c532d2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  playerMovement: {fileID: 594410081}
 --- !u!66 &855719877
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -7570,7 +7500,6 @@ GameObject:
   - component: {fileID: 1348838795}
   - component: {fileID: 1348838799}
   - component: {fileID: 1348838798}
-  - component: {fileID: 1348838797}
   - component: {fileID: 1348838796}
   m_Layer: 0
   m_Name: Water
@@ -7632,19 +7561,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!114 &1348838797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1348838794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22d27f80357443b4a9469a20fbfc7fdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Water
-  player: {fileID: 594410081}
 --- !u!483693784 &1348838798
 TilemapRenderer:
   serializedVersion: 2
