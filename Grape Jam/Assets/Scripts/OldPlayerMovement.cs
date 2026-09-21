@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+/* public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rigidBody;
     public Animator animator;
@@ -129,4 +128,4 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.white;
         Gizmos.DrawCube(groundCheck.position, groundCheckSize);
     }
-}
+} */

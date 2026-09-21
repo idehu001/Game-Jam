@@ -6,6 +6,6 @@ public class ToBaseGravity : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        playerMovement.baseGravity = 2;
+        playerMovement._rb.gravityScale = playerMovement.oldGravityScale;
     }
 }
