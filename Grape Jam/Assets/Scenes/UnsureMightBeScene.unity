@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 54616022}
   - component: {fileID: 54616021}
   - component: {fileID: 54616020}
-  - component: {fileID: 54616019}
   m_Layer: 0
   m_Name: ToBaseGravity
   m_TagString: Untagged
@@ -1320,19 +1319,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &54616019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54616015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88beab74587b7574abcb9ef99c532d2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToBaseGravity
-  playerMovement: {fileID: 1308724735}
 --- !u!66 &54616020
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -2208,7 +2194,7 @@ Transform:
   m_GameObject: {fileID: 179459574}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.14, y: -5.28, z: -10}
+  m_LocalPosition: {x: -19.49, y: -0.55, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4640,7 +4626,6 @@ GameObject:
   - component: {fileID: 321713427}
   - component: {fileID: 321713426}
   - component: {fileID: 321713425}
-  - component: {fileID: 321713424}
   m_Layer: 3
   m_Name: Coals
   m_TagString: Untagged
@@ -4663,19 +4648,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169780887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &321713424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 321713422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af3f54447b0e1f3408f1ed490e30d640, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coals
-  playerMovement: {fileID: 1308724735}
 --- !u!66 &321713425
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -6793,7 +6765,6 @@ GameObject:
   - component: {fileID: 1308724738}
   - component: {fileID: 1308724737}
   - component: {fileID: 1308724736}
-  - component: {fileID: 1308724735}
   - component: {fileID: 1308724734}
   m_Layer: 0
   m_Name: Nu
@@ -6824,33 +6795,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1308724735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308724733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 864e9b11af7cb5048abed6430646fa62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  rigidBody: {fileID: 1308724738}
-  animator: {fileID: 1308724734}
-  movementSpeed: 5
-  jumpPower: 12
-  groundCheck: {fileID: 1114201518}
-  groundCheckSize: {x: 1, y: 0.1}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  baseGravity: 2
-  maxFallSpeed: 10
-  fallSpeedMultiplier: 2
-  inWater: 0
-  onIce: 0
-  iceRatio: 0
 --- !u!114 &1308724736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6878,7 +6822,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1308724735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0
@@ -6934,7 +6878,7 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1308724735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: Jump
         m_Mode: 0
@@ -6950,7 +6894,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Jump[/Keyboard/upArrow,/Keyboard/w]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1308724735}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: Float
         m_Mode: 0
@@ -7110,7 +7054,7 @@ Transform:
   m_GameObject: {fileID: 1308724733}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.14, y: -5.28, z: 0}
+  m_LocalPosition: {x: -19.49, y: -0.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7256,7 +7200,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9.334074
+  orthographic size: 21.355541
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7281,7 +7225,7 @@ Transform:
   m_GameObject: {fileID: 1487587884}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -0.28, z: -10}
+  m_LocalPosition: {x: -19.49, y: -0.55, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
