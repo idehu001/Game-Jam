@@ -345,7 +345,7 @@ SpriteRenderer:
   m_SortingLayer: -2
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7910119097182837900, guid: 084ed362eb43a5547b6aa219d7d904e6, type: 3}
+  m_Sprite: {fileID: 7458787459247524767, guid: a344a28a73b977c4e98a260bbc1b91f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -402,6 +402,7 @@ Transform:
   - {fileID: 1746801565}
   - {fileID: 2140710992}
   - {fileID: 137414105}
+  - {fileID: 1954995547}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &594410080 stripped
@@ -847,11 +848,11 @@ Transform:
   m_GameObject: {fileID: 1954995544}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.3419995, y: -24.320002, z: 0}
+  m_LocalPosition: {x: -41.83, y: 1.8020496, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 594410080}
+  m_Father: {fileID: 494932998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1962113149 stripped
 Transform:
@@ -4467,11 +4468,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6419054466783641937, guid: 0cf38692ec0d0ce4e89924bc47c4284b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.16
+      value: 18.89
       objectReference: {fileID: 0}
     - target: {fileID: 6419054466783641937, guid: 0cf38692ec0d0ce4e89924bc47c4284b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.12
+      value: 7.46
       objectReference: {fileID: 0}
     - target: {fileID: 6419054466783641937, guid: 0cf38692ec0d0ce4e89924bc47c4284b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4518,9 +4519,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6419054466783641937, guid: 0cf38692ec0d0ce4e89924bc47c4284b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2073339783}
-    - targetCorrespondingSourceObject: {fileID: 6419054466783641937, guid: 0cf38692ec0d0ce4e89924bc47c4284b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1954995547}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf38692ec0d0ce4e89924bc47c4284b, type: 3}
 --- !u!1001 &7470949476505451482
