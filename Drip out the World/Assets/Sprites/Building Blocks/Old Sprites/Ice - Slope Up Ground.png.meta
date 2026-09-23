@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 457701e6823fd424bba5ce989725bdd2
+guid: 7c95ca03fd4a51846a195823efb6848e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5521223261723522904
-    second: Crack Right Bottom_0
+      213: 3899016239047958134
+    second: Ice - Slope Up Ground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Crack Right Bottom_0
+      name: Ice - Slope Up Ground_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 258
-        height: 258
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a8885732bca063b0800000000000000
-      internalID: -5521223261723522904
+      spriteID: 67edeed8c961c1630800000000000000
+      internalID: 3899016239047958134
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Crack Right Bottom_0: -5521223261723522904
+      Ice - Slope Up Ground_0: 3899016239047958134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

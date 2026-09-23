@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e914a1f75f23adb4c8150a5b9b5a04de
+guid: cbd074e31b31c954eb4607393f842f85
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2817898680266361364
-    second: Top Crack_0
-  - first:
-      213: 9099783655979094627
-    second: Top Crack_1
+      213: 7262564934843541528
+    second: Crack Left Top_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -99,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Top Crack_0
+      name: Crack Left Top_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 146
-        height: 256
+        width: 258
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce57ea58410d4e8d0800000000000000
-      internalID: -2817898680266361364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top Crack_1
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 0
-        width: 126
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3621a8bb50de84e70800000000000000
-      internalID: 9099783655979094627
+      spriteID: 818ae8b5450d9c460800000000000000
+      internalID: 7262564934843541528
       vertices: []
       indices: 
       edges: []
@@ -150,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Top Crack_0: -2817898680266361364
-      Top Crack_1: 9099783655979094627
+      Crack Left Top_0: 7262564934843541528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

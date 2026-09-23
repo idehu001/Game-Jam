@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b673c39115409154db552b49f30624d6
+guid: a3b75d2f34d12404a90142ce3a0cef64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6482737013037613852
-    second: coal_0
+      213: -2114564446530186766
+    second: Crack Left Bottom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,35 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coal_0
+      name: Crack Left Bottom_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 223
+        width: 258
+        height: 258
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline:
-      - - {x: 128, y: 111.5}
-        - {x: -128, y: 111.5}
-        - {x: -128, y: -111.5}
-        - {x: 128, y: -111.5}
-      physicsShape:
-      - - {x: 128, y: 111.5}
-        - {x: -128, y: 111.5}
-        - {x: -128, y: -111.5}
-        - {x: 128, y: -111.5}
-      tessellationDetail: 0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: c13426267fe47f950800000000000000
-      internalID: 6482737013037613852
+      spriteID: 2f1d5edd6de87a2e0800000000000000
+      internalID: -2114564446530186766
       vertices: []
       indices: 
       edges: []
@@ -133,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bcaaf62a3102eb44c98992d1e6de4d12
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -143,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coal_0: 6482737013037613852
+      Crack Left Bottom_0: -2114564446530186766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

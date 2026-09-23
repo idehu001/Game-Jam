@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7c95ca03fd4a51846a195823efb6848e
+guid: 743bb909e3f60084985b39f53910a1ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3899016239047958134
-    second: Ice - Slope Up Ground_0
+      213: -2865325506229041916
+    second: Gay_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ice - Slope Up Ground_0
+      name: Gay_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67edeed8c961c1630800000000000000
-      internalID: 3899016239047958134
+      spriteID: 4050a5b12a15c38d0800000000000000
+      internalID: -2865325506229041916
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ice - Slope Up Ground_0: 3899016239047958134
+      Gay_0: -2865325506229041916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

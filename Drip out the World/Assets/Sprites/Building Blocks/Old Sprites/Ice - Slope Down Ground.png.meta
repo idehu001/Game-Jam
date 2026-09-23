@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c9620500f8fbcdf40a20c6f49ff25d7f
+guid: 6c9b6b478f31e7242a96783e731f21f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2338503914654641245
-    second: Ice - Left and Slope Down Ground_0
+      213: 5951122152007410305
+    second: Ice - Slope Down Ground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ice - Left and Slope Down Ground_0
+      name: Ice - Slope Down Ground_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a3562d5417fb8fd0800000000000000
-      internalID: -2338503914654641245
+      spriteID: 1822c5d1112a69250800000000000000
+      internalID: 5951122152007410305
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ice - Left and Slope Down Ground_0: -2338503914654641245
+      Ice - Slope Down Ground_0: 5951122152007410305
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

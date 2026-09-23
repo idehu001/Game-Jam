@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6c9b6b478f31e7242a96783e731f21f5
+guid: 8f506be467cc9e348ade166b9383739b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5951122152007410305
-    second: Ice - Slope Down Ground_0
+      213: 5403862500180436431
+    second: Water - Submerged_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ice - Slope Down Ground_0
+      name: Water - Submerged_0
       rect:
         serializedVersion: 2
         x: 0
@@ -108,15 +121,23 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      outline:
+      - - {x: 128, y: 128}
+        - {x: -128, y: 128}
+        - {x: -128, y: -128}
+        - {x: 128, y: -128}
+      physicsShape:
+      - - {x: 128, y: 128}
+        - {x: -128, y: 128}
+        - {x: -128, y: -128}
+        - {x: 128, y: -128}
+      tessellationDetail: 0
       bones: []
-      spriteID: 1822c5d1112a69250800000000000000
-      internalID: 5951122152007410305
+      spriteID: fc52f4220506efa40800000000000000
+      internalID: 5403862500180436431
       vertices: []
       indices: 
       edges: []
@@ -125,7 +146,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 55d95662451b4934493f9817c476dfb4
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +156,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ice - Slope Down Ground_0: 5951122152007410305
+      Water - Submerged_0: 5403862500180436431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

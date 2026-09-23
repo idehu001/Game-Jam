@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8f506be467cc9e348ade166b9383739b
+guid: 4da3d0d3f16454d478504ccc477e2d8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5403862500180436431
-    second: Water - Submerged_0
+      213: 6147777685625707044
+    second: Fan_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,35 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water - Submerged_0
+      name: Fan_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 80
         y: 0
-        width: 256
-        height: 256
+        width: 127
+        height: 255
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline:
-      - - {x: 128, y: 128}
-        - {x: -128, y: 128}
-        - {x: -128, y: -128}
-        - {x: 128, y: -128}
-      physicsShape:
-      - - {x: 128, y: 128}
-        - {x: -128, y: 128}
-        - {x: -128, y: -128}
-        - {x: 128, y: -128}
-      tessellationDetail: 0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: fc52f4220506efa40800000000000000
-      internalID: 5403862500180436431
+      spriteID: 42a1bc59b3b415550800000000000000
+      internalID: 6147777685625707044
       vertices: []
       indices: 
       edges: []
@@ -133,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 55d95662451b4934493f9817c476dfb4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -143,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Water - Submerged_0: 5403862500180436431
+      Fan_0: 6147777685625707044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
