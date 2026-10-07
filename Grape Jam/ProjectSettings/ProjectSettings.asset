@@ -607,8 +607,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Grape Jam
-  metroPackageVersion: 
+  metroPackageName: GrapeJam
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -616,7 +616,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Grape Jam
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Grape Jam
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
