@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void LevelScene()
     {
+        SceneManager.LoadScene(2);
         Debug.Log("Levels!");
     }
 
