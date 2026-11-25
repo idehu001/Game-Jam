@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class Finish : MonoBehaviour
 
     private IEnumerator EndOfLevel(float delay)
     {
-        Debug.Log("You're done! FINISHED! PLEASE STOP NOW");
+        // Debug.Log("You're done! FINISHED! PLEASE STOP NOW");
         yield return new WaitForSeconds(delay);
-        Debug.Log("Popup would appear now?");
+        SceneManager.LoadScene(8);
     }
 }
